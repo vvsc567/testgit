@@ -16,6 +16,8 @@ class unittesting(unittest.TestCase):
                 self.assertEqual(responce, fake_json)
 
 
+print("hello")
+
 
 if __name__ == '__main__':
         unittest.main()
