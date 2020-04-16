@@ -8,10 +8,10 @@ def login():
         return jsonify({'message': 'hello logged in'})
 
 
-@app.route('/test', methods=['POST'])
-def test():
+@app.route('/test/<string:name>', methods=['POST'])
+def test(name):
     if request.method == 'POST':
-        return jsonify({"hello": "sai"})
+        return jsonify({"hello": name})
 
 
 if __name__ == '__main__':
